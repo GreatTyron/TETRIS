@@ -1,1 +1,14 @@
-This is demo of my project, my project is Tetris
+### This is demo of my project, my project is Tetris.I have created a total of twelve steps for this project.
+- Since I have added detailed comments to most of the code, I will only briefly explain it in the video
+- The first step is to initialise the game window.First of all, the creation of the window requires the class to inherit from the JFrame class.Then there is the method of creating the window.
+- The second step is to initialise the game's interface.Create the method first. Then define a JPanel object first, and then call the setLayout method of this object to set the format layout of the screen component.
+- The third step is to initialise the game's description panel.Create the method first. Then define two JPanel objects, representing the left and right description panels of the game, respectively. Next call their setLayout method to initialize their format layout.And finally create a method of game start. Since the game will end when it reaches failure, we write a dead loop first and then determine if the game is over.
+- The fourth step is to randomly generate the falling cubes.First create the method. Then use Random to randomize the squares stored in the array. After that I talk about the shape of the squares.The blue square is a small 2 * 2 square,the white square is a large 4 * 4 square,convert to hexadecimal numbers:0x00cc.All the squares have a total of 22,index is from 0 to 21.
+- The fifth step is to run the game.First create the method. Then generate a drop square using the previously written RanRect method and initialize the drop position.
+- The sixth step is to determine if the cube can be dropped.First create the method. Our judgment method uses the constant right shift of 0x8000 by one bit to compare with the graph stored in rect.
+- The seventh step is to remove the falling blocks from more than one row.First create the method. Then complete the above cube drops with two for loops.
+- The eighth step is to refresh the screen after removing a row of blocks.First create the method. Then a double for loop is used to iterate through the game area above the row row, next determine if this location is a square and call the setBackground method.
+- The ninth step is to clear the blocks.
+- The tenth step is to draw the block.
+- The eleventh step is to control the movement of the blocks with the keyboard. The main call is to the getKeyCode method.
+- The last step is the pause function of the game.The main call is to the getKeyCode method.
